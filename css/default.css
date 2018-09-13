@@ -1,0 +1,91 @@
+@charset "UTF-8";
+html {
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+  vertical-align: baseline;
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+}
+
+@media (min-width: 0px) {
+  .container {
+    background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="%23d9f2f2" width="100%" %3E%3Crect x="0" width="44.44444%" height="100%"/%3E%3Crect x="55.55556%" width="44.44444%" height="100%"/%3E%3C/svg%3E') no-repeat scroll;
+    height: 500px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="%23d9f2f2" width="100%" %3E%3Crect x="0" width="28.57143%" height="100%"/%3E%3Crect x="35.71429%" width="28.57143%" height="100%"/%3E%3Crect x="71.42857%" width="28.57143%" height="100%"/%3E%3C/svg%3E') no-repeat scroll;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="%23d9f2f2" width="100%" %3E%3Crect x="0" width="16.66667%" height="100%"/%3E%3Crect x="20.83333%" width="16.66667%" height="100%"/%3E%3Crect x="41.66667%" width="16.66667%" height="100%"/%3E%3Crect x="62.5%" width="16.66667%" height="100%"/%3E%3Crect x="83.33333%" width="16.66667%" height="100%"/%3E%3C/svg%3E') no-repeat scroll;
+  }
+}
+
+@media (min-width: 0px) {
+  [data-span] {
+    background: #ff0000;
+    line-height: 10rem;
+    text-align: center;
+    color: #fff;
+    font-size: 5rem;
+  }
+}
+@media (min-width: 768px) {
+  [data-span] {
+    background: #52b752;
+    line-height: 4em;
+    text-align: center;
+    color: #fff;
+    font-size: 3em;
+  }
+}
+@media (min-width: 1024px) {
+  [data-span] {
+    background: #6666d0;
+    line-height: 4em;
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+  }
+}
+
+/*
+// Demo
+.container {
+  background: susy-svg-grid() no-repeat scroll;
+  max-width: 1024px;
+  margin: 0 auto;
+  height: 1000px;
+}
+//他語言選
+
+[data-span='1'] {
+  width: span(1);
+}
+[data-span='2'] {
+  width: span(2);
+  margin-left: span(1) + gutter();
+}
+[data-span='3'] {
+  width: span(3);
+  padding-left: span(1) + gutter();
+}
+
+[data-span] {
+  background: #369;
+  line-height: 50px;
+  color: white;
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+*/
